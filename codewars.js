@@ -64,9 +64,18 @@ function count(array){
   return counts;
 }
 
+//Your job is to write a function which increments a string, to create a new string.
+//If the string already ends with a number, the number should be incremented by 1.
+//If the string does not end with a number the number 1 should be appended to the new string.
+//ex. foo -> foo1
+//ex. foobar23 -> foobar24
+//ex. foo099 -> foo100
 
-//count all the occuring characters(UTF-8) in string. If you have string like this aba then the result should be { 'a': 2, 'b': 1 }
-function count (string) {
-  // The function code should be here
-   return {};
+function incrementString (strng) {
+  // return incrementedString
 }
+
+
+//this is where the
+//instructions are
+//inserted.
