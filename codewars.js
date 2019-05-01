@@ -64,6 +64,59 @@ function count(array){
   return counts;
 }
 
-//this is where the
-//instructions are
-//inserted.
+//Given: an array containing hashes of names
+//Return: a string formatted as a list of names separated by commas except for the last two names,
+// which should be separated by an ampersand.
+// ex. list([ {name: 'Bart'}, {name: 'Lisa'}, {name: 'Maggie'} ])
+// returns 'Bart, Lisa & Maggie'
+// list([])
+// returns ''
+
+function list(names){
+  names.map(&:inspect).join(', ')//your code here
+}
+
+//build a tower with astricks
+
+function towerBuilder(nFloors) {
+  if(nFloors > 0){
+    var astArray = [];
+    var ast = '*';
+    if(nFloors == 1){
+      return ast;
+    }
+    if(nFloors > 1){
+      for(var n = 0;n < nFloors;n++){
+
+      }
+    }
+  }
+  else{
+    return false
+  }
+}
+
+//A bookseller has lots of books classified in 26 categories labeled A, B, ... Z. Each book has a code c of 3, 4, 5 or more capitals letters.
+//The 1st letter of a code is the capital letter of the book category.
+//In the bookseller's stocklist each code c is followed by a space and by a positive integer n (int n >= 0) which indicates the quantity of books of this code in stock.
+
+function stockList(listOfArt, listOfCat){
+  const finalAnswer = "";
+  const amounts = [];
+  for(var i = 0; i < listOfCat.length; i++){
+    const category = listOfCat[i];
+    for(var n = 0; n < listOfArt.length; n++){
+      const art = listOfArt[n];
+      const splitArt = art.split(' ');
+      const amount = splitArt[1];
+      const indiviualCat = splitArt[0];
+      const firstLetter = indiviualCat.split('');
+      if(firstLetter[0] == category){
+        amounts.push(firstLetter[0] + ":" + amount);
+      }
+    }
+  }
+  if(amounts.length > 0){
+
+  }
+}
